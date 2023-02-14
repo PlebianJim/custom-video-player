@@ -7,7 +7,7 @@ const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
-const playButton = document.querySelector('.player__button.toggle')
+const playButton = document.querySelector('.player__button.toggle');
 
 // Build out functions
 
@@ -21,8 +21,7 @@ function togglePlay() {
 // Update button for play and paused
 
 function updateButton() {
-    const icon = this.paused ? '►' : '❚❚';
-    console.log('icon');
+    const icon = this.pause ? '►' : '❚❚';
     toggle.textContext = icon;
 }
 
@@ -76,4 +75,3 @@ progress.addEventListener('click', scrub);
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
-
