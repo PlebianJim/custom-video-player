@@ -8,6 +8,7 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 const playButton = document.querySelector('.player__button.toggle');
+const fullScreenButton = player.querySelector('.player__button.fullscreen');
 
 // Build out functions
 
